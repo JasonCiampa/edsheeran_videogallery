@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 0.5px 0.5px 1px white, -0.5px 0.5px 1px white, -0.5px -0.5px 1px white, 0.5px -0.5px 1px white;
+    background-image: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+    font-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header, footer {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 3vh;
+}
+
+header img {
+    margin: 2vh;
+    max-width: 200px;
+}
+
+nav {
+    flex: 0 1 300px;
+}
+
+nav a {
+    padding: 2vh;
+    display: block;
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+    background-color: orangered;
+    color: orange;
+    border-radius: 5px;
+}
+
+nav a:link, nav a:visited {
+    color: maroon;
+}
+
+nav ul {
+    list-style-type: none;
+    position: sticky;
+    top: 100px;
+}
+
+nav li {
+    width: 80%;
+    border: 1px solid white;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: orange;
+    background-color: maroon;
+    transition: 300ms;
+    padding: 3vh;
+}
+
+nav li a:hover {
+    cursor: pointer;
+}
+
+main {
+    flex: 0 1 600px;
+}
+
+article {
+    padding: 4vh 2vh;
+    background-color: maroon;
+    margin-bottom: 2vh;
+    border: 1px solid whitesmoke;
+
+}
+
+
+.caption {
+    margin: 2vh 0;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+    background-color: black;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    padding: 3vh 0;
+    border-top: 1px solid whitesmoke;
+}
+
+footer p {
+    font-size: 100%;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#cornerBtn {
+    scroll-behavior: smooth;
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    padding: 10px;
+    border-radius: 90%;
+    border: 2px solid whitesmoke;
+    background-color: maroon;
+    font-size: 110%;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: 300ms;
+}
+
+#cornerBtn:hover{
+    background-color: whitesmoke;
+    color: maroon;
+    padding: 15px;
+}
+
